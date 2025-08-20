@@ -3,7 +3,7 @@
 /* About Hero Section */
 .about-hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 120vh; /* Increased from 100vh to make it longer */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,7 @@
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 6rem; /* Add top padding to push content down from header */
 }
 
 .about-hero-text {
@@ -57,6 +58,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  margin-top: 2rem; /* Add top margin to push badge down further */
   animation: badgePulse 3s ease-in-out infinite;
 }
 
@@ -226,6 +228,16 @@
 @media (min-width: 768px) {
   .introduction-highlights {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-hero {
+    min-height: 115vh; /* Medium screens */
+  }
+  
+  .about-hero-content {
+    padding-top: 5.5rem;
   }
 }
 
@@ -925,8 +937,16 @@
 /* Responsive Design for About Us */
 @media (max-width: 767px) {
   .about-hero {
+    min-height: 110vh; /* Slightly less increase on mobile */
     padding: 2rem 0;
   }
+   .about-hero-content {
+    padding-top: 5rem; /* Adjust for mobile header height */
+  }
+    .about-hero-badge {
+    margin-top: 1.5rem;
+  }
+}
   
   .company-introduction {
     padding: 4rem 0;
@@ -965,7 +985,7 @@
   .values-grid {
     grid-template-columns: 1fr;
   }
-}
+
 
 /* Enhanced Animations for About Page */
 @keyframes slideInLeft {

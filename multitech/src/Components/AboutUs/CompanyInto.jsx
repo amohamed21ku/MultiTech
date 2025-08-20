@@ -78,8 +78,8 @@ const CompanyIntroduction = () => {
               
               <div className="main-image">
                 <img 
-                  src="/files/high-voltage-post-high-voltage-tower_1127-3215-2.jpg" 
-                  alt="Technology Infrastructure"
+                  src="/src/assets/group_photo.png" 
+                  alt="group_photo"
                   className="intro-main-image"
                 />
               </div>

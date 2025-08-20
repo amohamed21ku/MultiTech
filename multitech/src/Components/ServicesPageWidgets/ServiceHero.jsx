@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-const ServicesHero = () => {
+const ServiceHero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -71,4 +71,4 @@ const ServicesHero = () => {
   );
 };
 
-export default ServicesHero;
+export default ServiceHero;

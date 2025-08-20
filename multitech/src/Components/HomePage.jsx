@@ -8,10 +8,10 @@ import ServicesPreview from "./HomePageWidgets/ServicesPreview";
 import ContactSection from "./HomePageWidgets/ContactSection";
 import Footer from "./HomePageWidgets/Footer";
 
-const HomePage = () => {
+const HomePage = ({ onNavigate }) => {
   return (
     <div className="home-page">
-      <Header activeSection="home" />
+      <Header activeSection="home" onNavigate={onNavigate} />
       <Hero />
       <StatsSection />
       <CompanyOverview />

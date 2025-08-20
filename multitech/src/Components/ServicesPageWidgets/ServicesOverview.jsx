@@ -44,7 +44,7 @@ const ServicesOverview = () => {
             <div className="services-chart-container">
               <div className="services-chart">
                 <img 
-                  src="/Blue%20and%20White%20Circle%20Organizational%20Chart.png" 
+                  src="/src/assets/Services_Overview.png" 
                   alt="Services Overview Chart"
                   className="services-chart-image"
                 />
